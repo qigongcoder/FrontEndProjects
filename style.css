@@ -1,0 +1,56 @@
+@import url("normalize.css");
+
+h1{
+  text-align: center;
+}
+
+/*--------Flex box version-------
+-----------------------------------------*/
+
+#navcontainerflex ul {
+  list-style-type: none;
+  display:flex;
+  justify-content: space-around;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+}
+
+#navcontainerflex ul li {
+  flex-shrink:1;
+  border: 1px grey solid;
+  width:20%;
+  background-color: #036;
+}
+
+#navcontainerflex ul li a {
+  display:block;
+  text-decoration: none;
+  color: #fff;
+  margin:5px;
+  text-align: center;
+}
+
+#navcontainerflex ul li:hover{
+  background-color: #369;
+}
+
+
+/*--------Default CSS styles-------
+-----------------------------------------*/
+
+/*
+li{
+  display: list-item;
+}
+
+ul{
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+*/
