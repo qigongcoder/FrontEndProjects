@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Drum Machine</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body  onkeydown="keyUsage(event)">
+      <div id="drum-machine">
+
+      <div id="title-container">
+        <h1>Relaxing Sounds</h1>
+      </div>
+
+      <div id="smaller-border">
+
+        <div class="row">
+          <div id="display">sound</div>
+        </div>
+
+        <div class="row">
+          <div class="drum-pad" id="heater-1" onmousedown="document.getElementById('Q').play();document.getElementById('display').textContent='heater-1';" >
+            <audio id="Q" class="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3" preload="auto"></audio>
+            <div id="innerQ">blue</div>
+          </div><!--
+
+          --><div class="drum-pad" id="heater-2" onmousedown="document.getElementById('W').play();document.getElementById('display').textContent='heater-2';" >
+            W
+            <audio id="W" class="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3" preload="auto"></audio>
+          </div><!--
+
+          --><div class="drum-pad" id="heater-3" onmousedown="document.getElementById('E').play();document.getElementById('display').textContent='heater-3';" >
+            E
+            <audio id="E" class="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3" preload="auto"></audio>
+          </div>
+        </div>
+    
+        <div class="row">
+          <div class="drum-pad" id="heater-4" onmousedown="document.getElementById('A').play();document.getElementById('display').textContent='heater-4';" >
+            A
+            <audio id="A" class="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3" preload="auto"></audio>
+          </div><!--
+
+          --><div class="drum-pad" id="heater-6" onmousedown="document.getElementById('S').play();document.getElementById('display').textContent='heater-6';">
+            S
+            <audio id="S" class="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3" preload="auto"></audio>
+          </div><!--
+
+          --><div class="drum-pad" id="dsc-oh" onmousedown="document.getElementById('D').play();document.getElementById('display').textContent='dsc-oh';" >
+            D
+            <audio id="D" class="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3" preload="auto"></audio>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="drum-pad" id="kick_n_hat" onmousedown="document.getElementById('Z').play();document.getElementById('display').textContent='kick_n_hat';" >
+            Z
+            <audio id="Z" class="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3" preload="auto"></audio>
+          </div><!--
+
+          --><div class="drum-pad" id="kick" onmousedown="document.getElementById('X').play();document.getElementById('display').textContent='kick';" >
+            X
+            <audio id="X" class="clip" src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3" preload="auto"></audio>
+          </div><!--
+
+          --><div class="drum-pad" id="cev" onmousedown="document.getElementById('C').play();document.getElementById('display').textContent='cev';" >
+            C
+            <audio id="C" class="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3" preload="auto"></audio>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+</html>

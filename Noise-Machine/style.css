@@ -1,0 +1,77 @@
+/*
+UNIVERSAL FORMATTING
+Zero everything off
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Courier New", Courier, monospace;
+  vertical-align: baseline;
+  color: black;
+  box-sizing: border-box;
+}
+
+#drum-machine{
+  width: 80vw;
+  height: 80vh;
+  margin: auto;
+  margin-top:5vh;
+  border: rgb(190, 235, 235) solid calc(1vw + 1vh);
+  border-radius: 50px;
+}
+
+#title-container{
+  border: pink solid 10px;
+  height: 20%;
+}
+
+h1{
+  text-align: center;
+  font-size: calc(2vw + 2vh);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+
+#smaller-border{
+  border: pink solid 1calc(2vw + 2vh);
+  height:80%;
+  text-align: center;
+}
+
+.row{
+  border:lightgreen solid calc(1vw + 1vh);
+  height: 25%;
+}
+
+.drum-pad{
+/*  border:lightblue solid calc(2vw + 2vh);*/
+  height: 100%;
+  width: 33.3%;
+  display: inline-block;
+  text-align: center;
+  background: lightgrey;
+  user-select: none;
+  font-size: calc(1vw + 1vh);
+  }
+
+  .drum-padbox:active {
+    background: darkgrey;
+  }
+  

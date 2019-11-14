@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+  <head>
+    <title>wrapping</title>
+  </head>
+  <style>
+    .a{
+      word-break: normal;
+    }
+
+    .b{
+      word-break: break-all;
+    }
+
+    .c{
+      word-break: keep-all;
+
+    }
+
+    .d{
+      word-break: break-word;   
+    }
+
+    .e{
+      word-wrap:break-word;
+    }
+
+    .f{
+      overflow-wrap:break-word;
+    }
+
+    .gap{
+      height: 40px;
+      background: green;
+    }
+
+    .box_size{
+      border:black 1px solid;
+      width:40px;
+    }
+
+  </style>
+  <body>
+    
+    <xmp class="gap"><p>one line,</p>
+<p>another line</p>
+    </xmp>
+    <p>one line,</p>
+    <p>another line</p>
+
+    <xmp class="gap"><p>one line,<br>another line</p>
+    </xmp>
+    <p>one line,<br>another line</p>
+
+    <xmp class="gap"><pre>one line,
+another line</pre></xmp>
+
+    <pre>one line,
+another line
+    </pre>
+
+    <div class="gap">word-break: normal;</div>
+    <div class="a box_size">one word, another word</div>
+
+    <div class="gap">word-break: break-all;</div>
+    <div class="b box_size">one word, another word</div>
+
+    <div class="gap">word-break: keep-all;</div>
+    <div class="c box_size">one word, another word</div>
+
+    <div class="gap">word-break: break-word;</div>
+    <div class="d box_size">one word, another word</div>
+
+    <hr>
+
+    <div class="gap">word-break: break-word;   </div>
+    <div class="d box_size">one word, another word</div>
+
+    <div class="gap">word-wrap:break-word;</div>
+    <div class="e box_size">one word, another word</div>
+
+    <div class="gap">overflow-wrap:break-word;</div>
+    <div class="f box_size">one word, another word</div>
+
+
+  </body>
+</html>

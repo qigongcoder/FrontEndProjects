@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+  <html>
+
+    <head>
+      <title>
+        My Clock
+      </title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <script  type="text/JavaScript" src="javascript.js"></script>
+    </head>
+
+    <body>
+
+      <div id="surrounding">
+
+        <div id="title" class="box-look">Pomodoro Clock</div>
+        <div id="time-left" class="box-look">25:00</div>
+        <div id="timer-label" class="box-look">session</div>
+        <div id="session-label" class="box-look">session<br/>duration</div>
+        <div id="session-length" class="box-look">25</div>
+        <button id="session-decrement" class="box-look" onclick="sessionDecrease()">&#9660;</button>
+        <button id="start_stop" class="box-look" onclick="startStop()">&#9654; / &#10074;&#10074;</button>
+        <button id="session-increment" class="box-look" onclick="sessionIncrease()">&#9650;</button>
+        <div id="break-label" class="box-look">break<br/>duration</div>
+        <button id="break-decrement" class="box-look" onclick="breakDecrease()">&#9660;</button>
+        <div id="break-length" class="box-look">5</div>
+        <button id="reset" class="box-look" onclick="restart()">&#x21bb;</button>
+        <button id="break-increment" class="box-look" onclick="breakIncrease()">&#9650;</button>
+
+      </div>
+
+      <audio id="beep" preload="auto" src="https://goo.gl/65cBl1"></audio>
+
+    </body>
+
+  </html>

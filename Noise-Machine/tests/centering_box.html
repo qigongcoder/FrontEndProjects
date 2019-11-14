@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<style>
+
+#big-border{
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 80vh;
+  height: 80vh;
+  border: 5px green solid;
+}
+
+.drum-pad{
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 50vh;
+  height: 50vh;
+
+  background: grey;
+
+  user-select: none;
+
+  text-align: center;
+  
+  font-size: calc(5vw + 5vh);;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+</style>
+
+
+<html>
+
+
+
+
+  <body onkeydown="keyUsage(event)">
+
+    <div id="big-border">
+
+      <div class="drum-pad" id="heater" onmousedown="document.getElementById('Q').play();" >
+        Q
+        <audio id="Q" class="clip" src="Heater-6.mp3" preload="auto"></audio>
+      </div>
+
+    </div>
+
+    <script>
+  
+      function keyUsage(event) {
+        var x = event.which || event.keyCode;
+        console.log("The Unicode value is:  " + x);
+        //document.getElementById("demo").innerHTML = "The Unicode value is: " + x;
+        if(x==81){
+          document.getElementById('Q').play();
+        }
+      }
+      
+    </script>
+
+  </body>
+
+</html>

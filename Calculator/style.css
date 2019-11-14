@@ -1,0 +1,31 @@
+      
+      h1 {
+        color:blue;
+        text-align: center;
+        font-size: 50px;
+      }
+
+      table {
+        margin: auto;
+        width: 80%;
+        border-collapse: collapse; /*removes double borders*/
+        font-size: 40px;
+      }
+
+      th {
+        text-align: center;
+        border: 1px solid black;
+      }
+
+      td{
+        text-align: center;    
+        border: 1px solid black;
+      }
+
+      td:empty:after{
+        content: "\00a0";
+      }
+
+      .butsmall{
+        font-size: 40px;
+      }

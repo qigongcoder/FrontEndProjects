@@ -20,13 +20,14 @@ h1{
   flex-shrink:1;
   border: 1px grey solid;
   width:20%;
-  background-color: #036;
+
 }
 
 #navcontainerflex ul li a {
   display:block;
   text-decoration: none;
   color: #fff;
+  background-color: #036;
   margin:5px;
   text-align: center;
 }
