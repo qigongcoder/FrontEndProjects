@@ -1,6 +1,19 @@
 @import url("normalize.css");
 
-.shape{
+/*
+Note - all calculations are done on the basis of the radius == 100px.
+The all the lengths can just be multiplied up from this
+The anti-rotation of the words would be pretty simple too
+vendor-prefixes, use add ons
+
+*/
+
+:root {
+  --size: 100px;
+}
+
+
+.outline{
   position:relative;
   margin:auto;
   margin-top:50px;
@@ -10,60 +23,48 @@
   text-align:center;
 }
 
-.quote{
+.circle{
+  border-radius: 100%;
   position:absolute;
+
+  width: var(--size);
+  height: var(--size);
+
+  line-height:var(--size);
+  transition:all 0.7s ease;
+}
+
+.circle:hover
+{
+        transform: scale(1.25);
+}
+
+.quote{
   top:0px;
   left: 95px;
-  width: 50px;
-  height: 50px;
   background: greenyellow;
 }
 
 .noise{
-  position:absolute;
   top: 69px;
   left: 0px;
-
-  width: 50px;
-  height: 50px;
   background: green;
 }
 
 .mark{
-  position:absolute;
   top: 69px;
   left: 190px;
-
-  width: 50px;
-  height: 50px;
   background: yellow;
 }
 
 .calc{
-  position:absolute;
   top: 185px;
   left: 36px;
-
-  width: 50px;
-  height: 50px;
   background: pink;
 }
 
 .timer{
-  position:absolute;
   top: 185px;
   left: 154px;
-
-  width: 50px;
-  height: 50px;
   background: darkcyan;
 }
-
-/*
-vendor-prefixes, use add ons
-
-.shape * {
-  position:absolute;
-}
-
-*/
