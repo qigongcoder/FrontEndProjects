@@ -31,40 +31,72 @@ vendor-prefixes, use add ons
   height: var(--size);
 
   line-height:var(--size);
-  transition:all 0.7s ease;
+
+
 }
 
-.circle:hover
+ .circle:hover
 {
-        transform: scale(1.25);
+  animation: init 0.5s ease;
+}
+
+
+@keyframes init{
+    0%   {transform-origin:10px 10px;transform: scale(1.0);}
+    50%  {transform-origin:10px 10px;transform: scale(1.1);}
+    100%  {transform-origin:10px 10px;transform: scale(1.0);}
+  }
+
+
+a{
+  display:block;
 }
 
 .quote{
   top:0px;
   left: 95px;
   background: greenyellow;
+  transform-origin:30px 160px;
+  transition: transform 1s;
+  transform: rotate(360deg);
 }
 
 .noise{
   top: 69px;
   left: 0px;
   background: green;
+  transform-origin:145px 80px;
+  transition: transform 1s;
+  transform: rotate(360deg);
+
 }
 
 .mark{
   top: 69px;
   left: 190px;
   background: yellow;
+  transform-origin:-45px 80px;
+  transition: transform 1s;
+  transform: rotate(360deg);
+
 }
 
 .calc{
   top: 185px;
   left: 36px;
   background: pink;
+  transform-origin:80px -40px;
+  transition: transform 1s;
+  transform: rotate(360deg);
+
 }
 
 .timer{
   top: 185px;
   left: 154px;
   background: darkcyan;
+  transform-origin:-20px -30px;
+  transition: transform 1s;
+  transform: rotate(360deg);
+
 }
