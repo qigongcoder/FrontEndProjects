@@ -1,31 +1,44 @@
-      
-      h1 {
-        color:blue;
-        text-align: center;
-        font-size: 50px;
-      }
 
-      table {
-        margin: auto;
-        width: 80%;
-        border-collapse: collapse; /*removes double borders*/
-        font-size: 40px;
-      }
+body{
+  background: grey;
+}
 
-      th {
-        text-align: center;
-        border: 1px solid black;
-      }
 
-      td{
-        text-align: center;    
-        border: 1px solid black;
-      }
 
-      td:empty:after{
-        content: "\00a0";
-      }
+table {
+  margin: auto;
+  margin-top: 60px;
+  width: 400px;
+  border: black solid 20px;
+  border-radius: 10px;
 
-      .butsmall{
-        font-size: 40px;
-      }
+  box-shadow: 5px 5px 2px #bcbcbc, 4px 4px 0 #9c9c9c;
+
+/*  box-shadow: 5px 8px 5px 8px #aaaaaa;*/
+
+}
+
+
+th {
+  text-align: center;
+  background: lightgrey;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+}
+
+td {
+  text-align: center;
+}
+
+td:empty:after {
+  content: "\00a0";
+}
+
+button {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.butsmall {
+  font-size: 35px;
+}
