@@ -1,58 +1,107 @@
 @import url("normalize.css");
 
-h1{
-  text-align: center;
-}
-
-/*--------Flex box version-------
------------------------------------------*/
-
-#navcontainerflex ul {
-  list-style-type: none;
-  display:flex;
-  justify-content: space-around;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-}
-
-#navcontainerflex ul li {
-  flex-shrink:1;
-  border: 1px grey solid;
-  width:20%;
-
-}
-
-#navcontainerflex ul li a {
-  display:block;
-  text-decoration: none;
-  color: #fff;
-  background-color: #036;
-  margin:5px;
-  text-align: center;
-}
-
-
-#navcontainerflex ul li:hover{
-  background-color: #369;
-}
-
-
-/*--------Default CSS styles-------
------------------------------------------*/
-
 /*
-li{
-  display: list-item;
+Note - all calculations are done on the basis of the radius == 100px.
+The all the lengths can just be multiplied up from this
+The anti-rotation of the words would be pretty simple too
+vendor-prefixes, use add ons
+
+*/
+
+:root {
+  --size: 100px;
 }
 
-ul{
-  display: block;
-  list-style-type: disc;
-  margin-top: 1em;
-  margin-bottom: 1 em;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 40px;
+
+.outline{
+  position:relative;
+  margin:auto;
+  margin-top:50px;
+  width:241px;
+  height:235px;
+  text-align:center;
 }
-*/
+
+.circle{
+  border-radius: 100%;
+  position:absolute;
+
+  width: var(--size);
+  height: var(--size);
+
+  line-height:var(--size);
+
+
+}
+
+ .circle:hover
+{
+  animation: init 0.5s ease;
+}
+
+
+@keyframes init{
+    0%   {transform-origin:10px 10px;transform: scale(1.0);}
+    50%  {transform-origin:10px 10px;transform: scale(1.05);}
+    100%  {transform-origin:10px 10px;transform: scale(1.0);}
+  }
+
+
+a{
+  color: black;
+  display:block;
+  text-decoration:none;
+}
+
+a:visited{
+  color: black;
+}
+
+.quote{
+  top:0px;
+  left: 95px;
+  background: greenyellow;
+  transform-origin:30px 160px;
+  transition: transform 1s;
+  transform: rotate(360deg);
+}
+
+.noise{
+  top: 69px;
+  left: 0px;
+  background: green;
+  transform-origin:145px 80px;
+  transition: transform 1s;
+  transform: rotate(360deg);
+
+}
+
+.mark{
+  top: 69px;
+  left: 190px;
+  background: yellow;
+  transform-origin:-45px 80px;
+  transition: transform 1s;
+  transform: rotate(360deg);
+
+}
+
+.calc{
+  top: 185px;
+  left: 36px;
+  background: pink;
+  transform-origin:80px -40px;
+  transition: transform 1s;
+  transform: rotate(360deg);
+
+}
+
+.timer{
+  top: 185px;
+  left: 154px;
+  background: darkcyan;
+  transform-origin:-20px -30px;
+  transition: transform 1s;
+  transform: rotate(360deg);
+
+}
