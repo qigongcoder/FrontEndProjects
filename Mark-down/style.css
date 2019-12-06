@@ -25,32 +25,44 @@ time, mark, audio, video {
   color: black;
 }
 
+body{
+  background: black;
+  background-image:url("concrete_seamless.png");
+  /*This pattern is downloaded from www.subtlepatterns.com*/
+  background-position:center;
+  user-select: none;
+}
+
+
 #big_border{
   box-sizing: content-box;
-  height: 600px;
+  height: 500px;
   width: 800px;
   margin: auto;
   margin-top: 10px;
   border: black solid 4px;
+  border-radius: 10px;
 }
 
 #title-container{
   border: pink solid 3px;
-  height: 20%;
+  height: 14%;
   box-sizing: border-box;
+  border-radius: 9px;
 }
 
 h1{
   text-align: center;
-  font-size: 40px;
+  font-size: 20px;
   text-decoration: underline;
   padding-top: 20px;
   }
 
 #small-box-container{
   border: pink solid 3px;
-  height:80%;
+  height:86%;
   box-sizing: border-box;
+  border-radius: 9px;
 }
 
 
@@ -60,6 +72,7 @@ h1{
   text-align:center;
   height: 50%;
   padding-top: 2%;
+  border-radius: 9px;
 }
 
 textarea {

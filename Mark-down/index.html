@@ -2,9 +2,8 @@
 <html lang="en">
 
   <head>
-    <title>Mark Down</title>
+    <title>Mark Down Previewer</title>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script type="text/JavaScript" src="js.js" ></script>
@@ -16,32 +15,15 @@
     <div id="big_border">
 
       <div id="title-container">
-        <h1>Mark Down</h1>
+        <h1>Mark Down Previewer</h1>
       </div>
 
       <div id="small-box-container">
 
         <div class="small-box" >
           <div>
-            <p>Enter</p>
-            <textarea rows="8" cols="80" placeholder="# Heading One
-            ## Heading Two
-            A link [links](https://www.freecodecamp.com)
-            Inline code \`<div></div>\`.
-            \`\`\`
-            //code:
-            let x=3;
-            for(let i=0;i<5;i++){
-                x++;
-            }
-            \`\`\`
-            
-            1. List Item One
-            2. List Item Two
-            > Block Quote
-            ![alt text][logo]
-            Strong emphasis, aka bold, with **asterisks** or __underscores__.
-            " id="editor" oninput="check()"></textarea>
+            <p>Input</p>
+            <textarea rows="8" cols="90"  id="editor" oninput="check()"></textarea>
           </div>
         </div>
   
