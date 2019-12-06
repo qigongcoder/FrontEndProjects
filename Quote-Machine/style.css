@@ -3,6 +3,7 @@ UNIVERSAL FORMATTING
 Zero everything off
 */
 
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,13 +26,17 @@ time, mark, audio, video {
   color: black;
 }
 
+
 body{
+  background: black;
   background-image:url("moutains.jpg");
   /*Photo by Alessandro Sacchi on Unsplash*/
   background-position:center;
   background-repeat:no-repeat;
   user-select: none;
 }
+
+
 
 .text_container{
   width: 70%;
