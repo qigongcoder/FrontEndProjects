@@ -22,8 +22,18 @@ time, mark, audio, video {
   font-size: 100%;
   font-family: "Courier New", Courier, monospace;
   vertical-align: baseline;
-  color: black;
+  color: white;
   box-sizing: border-box;
+}
+
+body{
+
+  height: 100vh;
+  background:
+  linear-gradient(0deg, rgba(106, 106, 109, 0.356),rgba(106, 106, 106, 0.6)),
+  url("assets/moutain_1920_911.jpg");
+  background-position:center;
+  background-repeat:no-repeat;
 }
 
 #drum-machine{
@@ -31,47 +41,46 @@ time, mark, audio, video {
   height: 80vh;
   margin: auto;
   margin-top:5vh;
-  border: rgb(190, 235, 235) solid calc(1vw + 1vh);
-  border-radius: 50px;
 }
 
 #title-container{
-  border: pink solid 10px;
   height: 20%;
 }
 
 h1{
   text-align: center;
-  font-size: calc(2vw + 2vh);
+  font-size: calc(5vw + 4vh);
   position: relative;
-  top: 50%;
+  top: 20%;
   transform: translateY(-50%)
 }
 
 
 #smaller-border{
-  border: pink solid 1calc(2vw + 2vh);
   height:80%;
   text-align: center;
 }
 
+#display{
+  font-weight: bold;
+  font-size: calc(2vw + 2vh);
+}
+
 .row{
-  border:lightgreen solid calc(1vw + 1vh);
   height: 25%;
 }
 
 .drum-pad{
-/*  border:lightblue solid calc(2vw + 2vh);*/
   height: 100%;
   width: 33.3%;
   display: inline-block;
   text-align: center;
-  background: lightgrey;
   user-select: none;
-  font-size: calc(1vw + 1vh);
+  font-weight: bold;
+  font-size: calc(2vw + 2vh);
   }
 
   .drum-padbox:active {
-    background: darkgrey;
+/*    background: darkgrey;*/
   }
   
