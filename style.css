@@ -15,8 +15,8 @@ vendor-prefixes, use add ons
 
 .outline{
   position:relative;
-  margin:auto;
-  margin-top:50px;
+  margin-left:35vw;
+  margin-top:20vh;
   width:241px;
   height:235px;
   text-align:center;
@@ -104,4 +104,12 @@ a:visited{
   transition: transform 1.1s;
   transform: rotate(360deg);
 
+}
+
+
+body {
+/*	margin: 0;
+	width: 100%;
+  height: 100vh;*/
+  background: grey;
 }
