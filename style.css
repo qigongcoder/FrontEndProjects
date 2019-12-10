@@ -1,3 +1,4 @@
+
 @import url("normalize.css");
 
 /*
@@ -8,15 +9,32 @@ vendor-prefixes, use add ons
 
 */
 
+
+html {
+  background-color: black;
+  
+}
+
 :root {
   --size: 100px;
 }
 
 
+body{
+  background:url("underwater.jpg");
+  background-position:center;
+  background-repeat:no-repeat;
+/*Photo by Sven Scheuermeier on Unsplash*/
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+/*	overflow-y: hidden;*/
+}
+
 .outline{
   position:relative;
   margin-left:35vw;
-  margin-top:20vh;
+  top:20vh;
   width:241px;
   height:235px;
   text-align:center;
@@ -104,20 +122,5 @@ a:visited{
   transition: transform 1.1s;
   transform: rotate(360deg);
 
-}
-
-
-body {
-  background:grey;
-  background:url("underwater.jpg");
-  background-position:center;
-  background-repeat:no-repeat;
-/*Photo by Sven Scheuermeier on Unsplash*/
-/*	background: #00b4ff;*/
-	font: 100% Lato, Arial, Sans Serif;
-	height: 100vh;
-	margin: 0;
-	padding: 0;
-	overflow-y: hidden;
 }
 
