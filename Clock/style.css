@@ -25,12 +25,12 @@ time, mark, audio, video {
   color: black;
   box-sizing: border-box;
 }
-
+/*
 body{
   background: rgb(96,96,101);
 background: radial-gradient(circle, rgba(96,96,101,1) 0%, rgba(60,74,173,1) 100%);
 }
-
+*/
 #surrounding{
     border: black solid calc(0.2vw + 0.2vh);
     height: 80vh;
