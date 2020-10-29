@@ -19,9 +19,9 @@
 
     function start(){
       if(session_type=="session"){
-        document.getElementById("time-left").style.color = "red";
+        document.getElementById("time-left").style.color = "green";
       }else{
-        document.getElementById("time-left").style.color = "green";        
+        document.getElementById("time-left").style.color = "blue";        
       }
       document.getElementById("time-left").innerHTML=convertSecToMinAndSecs(current_val);
       myVar=setInterval(changeText, 1000);
@@ -36,10 +36,10 @@
 
       var x = document.getElementById("beep"); 
       x.play();
-/*
-      var audio = new Audio('beep.mp3');
+
+      var audio = new Audio('gong-chinese-daniel_simon.mp3');
       audio.play();
-*/      
+      
       clearInterval(myVar);
       if(session_type=="session"){
         session_type="break";
