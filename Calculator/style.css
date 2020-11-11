@@ -1,9 +1,13 @@
 
 body{
-  background: grey;
+  /*  background: grey;*/
+  height: 90vh;
+  background-image:url("pexels-skitterphoto-777211.jpg");
+  background-size: cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  user-select: none;
 }
-
-
 
 table {
   margin: auto;
