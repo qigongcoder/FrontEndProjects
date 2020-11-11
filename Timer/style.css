@@ -29,8 +29,9 @@ time, mark, audio, video {
 body{
   background: black;
   background-image:url("pexels-skitterphoto-240040.jpg");
-   background-size: 100%;
+  background-size: 100%;
   background-position:center;
+  background-repeat:no-repeat;
   user-select: none;
 }
 
