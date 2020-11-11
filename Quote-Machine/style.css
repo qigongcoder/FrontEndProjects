@@ -30,9 +30,10 @@ time, mark, audio, video {
 body{
   background: black;
   background-image:url("moutains.jpg");
-  /*Photo by Alessandro Sacchi on Unsplash*/
   background-position:center;
+  background-repeat: no-repeat;  
   user-select: none;
+  /*Photo by Alessandro Sacchi on Unsplash*/
 }
 
 
