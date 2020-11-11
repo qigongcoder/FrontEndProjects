@@ -27,11 +27,7 @@ time, mark, audio, video {
 }
 
 body{
-
-  height: 100vh;
-  background:
-  linear-gradient(0deg, rgba(106, 106, 109, 0.356),rgba(106, 106, 106, 0.6)),
-  url("assets/moutain_1920_911.jpg");
+  background:url("assets/moutain_1920_911.jpg");
   background-position:center;
   background-repeat:no-repeat;
 }
